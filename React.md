@@ -81,12 +81,6 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-7. ### What are controlled components?
-    The component containing the form elements, such as <input>, <textarea>, and <select>, keeps track of the value of the input in it's state and re-renders the component each time the callback function e.g. onChange is fired therefore updating the state. This component is called a controlled component.
-
-
-    **[⬆ Back to Top](#table-of-contents)**
-
 8. ### What is equivalent of the following using React.createElement?
     
     ```javascript
