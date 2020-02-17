@@ -16,6 +16,58 @@
 |8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-reactcreateelement) |
 |9  | [What is JSX?](#what-is-jsx) |
 |10  | [Why should not we update the state directly?](#why-should-not-we-update-the-state-directly) |
+|11  | [What are the different phases of ReactJS component lifecycle?](#what-are-the-different-phases-of-reactjs-component-lifecycle) |
+|12  | [](#) |
+|13  | [](#) |
+|14  | [](#) |
+|15  | [](#) |
+|16  | [](#) |
+|17  | [](#) |
+|18  | [](#) |
+|19  | [](#) |
+|20  | [](#) |
+|21  | [](#) |
+|22  | [](#) |
+|23  | [](#) |
+|24  | [](#) |
+|25  | [](#) |
+|26  | [](#) |
+|27  | [](#) |
+|28  | [](#) |
+|29  | [](#) |
+|30  | [](#) |
+|31  | [](#) |
+|32  | [](#) |
+|33  | [](#) |
+|34  | [](#) |
+|35  | [](#) |
+|36  | [](#) |
+|37  | [](#) |
+|38  | [](#) |
+|39  | [](#) |
+|40  | [](#) |
+|41  | [](#) |
+|42  | [](#) |
+|43  | [](#) |
+|44  | [](#) |
+|45  | [](#) |
+|46  | [](#) |
+|47  | [](#) |
+|48  | [](#) |
+|49  | [](#) |
+|50  | [](#) |
+|51  | [](#) |
+|52  | [](#) |
+|53  | [](#) |
+|54  | [](#) |
+|55  | [](#) |
+|56  | [](#) |
+|57  | [](#) |
+|58  | [](#) |
+|59  | [](#) |
+|60  | [](#) |
+|61  | [](#) |
+|62  | [](#) |
 
 
 1. ### What is virtual DOM?
@@ -103,7 +155,7 @@
     If it is updated directly, it won’t re-render the component. Instead use `setState()` method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
         
     ```javascript
-        this.state.message =”Hello world”
+        this.state.message = ”Hello world”
         this.setState({message: "Hello World"})
     ```
 
@@ -343,7 +395,7 @@
 	
     ```html
         <form onSubmit={this.handleSubmit}>
-            <input value={this.state.value} />
+            <input value={this.state.value}/>
         </form>
     ```
 ￼
