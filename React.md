@@ -90,8 +90,8 @@
 8. ### What is equivalent of the following using React.createElement?
     
     ```javascript
-        QUESTION: const element = (<h1 className="greeting">Hello, world!</h1>)
-        ANSWER: const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
+        const element = (<h1 className="greeting">Hello, world!</h1>)
+        const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -109,8 +109,8 @@
     If it is updated directly, it won’t re-render the component. Instead use setState() method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
         
     ```javascript
-        WRONG: this.state.message =”Hello world”
-        CORRECT: this.setState({message: ‘Hello World’})
+        this.state.message =”Hello world”
+        this.setState({message: ‘Hello World’})
     ```
 
 
