@@ -36,6 +36,7 @@
     Refs allow to get direct access to a DOM element or an instance of a component. 
     ref attribute is added to the component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument. refs can be used both in class and functional components (as a closure). Usually used when there is a need to do integration with third-party DOM libraries.
 
+
     ```html
         <input ref={(input) => this.input = input} />
         <input ref={(input) => inputElement = input} />
@@ -48,6 +49,7 @@
     In React, events are the triggered reactions to specific actions like mouse hover, mouse click, key press, etc. Handling these events are similar to handling events in DOM elements. But there are some syntactical differences like:
     * Events are named using camel case instead of just using the lowercase.
     * Events are passed as functions instead of strings.
+    
     
     ```jsx harmony
         show(event){};   
@@ -62,6 +64,7 @@
     * Props get passed to the component similar to function parameters; 
     * State is managed within the component similar to variables declared within a function.
     
+    
     | State | Props |
     | --- | --------- |
     | The state is completely managed within a component for internal communication | Props are directly passed to its parents with child component |
@@ -73,6 +76,7 @@
 
 6. ### What are Higher-Order components (HOC)?
     A higher-order component is a function that takes a component and returns a new component. 
+	
 	
     ```javascript
         const EnhancedComponent = higherOrderComponent(WrappedComponent)
@@ -89,9 +93,10 @@
 
 8. ### What is equivalent of the following using React.createElement?
     
+    
     ```javascript
         const element = (<h1 className="greeting">Hello, world!</h1>)
-        const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
+        const element = React.createElement("h1", {className: "greeting"}, "Hello, world!")
     ```
 
 
@@ -99,6 +104,7 @@
 
 9. ### What is JSX?
     Dialect os JavaScript that allows to use HTML inside JavaScript code. JSX code by itself cannot be read by the browser; it must be transpiled into traditional JavaScript using tools like Babel. 
+    
     
     ```html
         <a href={props.url}>{props.name}</a>
@@ -110,9 +116,10 @@
 10. ### Why should not we update the state directly?
     If it is updated directly, it won’t re-render the component. Instead use setState() method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
         
+	
     ```javascript
         this.state.message =”Hello world”
-        this.setState({message: ‘Hello World’})
+        this.setState({message: "Hello World"})
     ```
 
 
