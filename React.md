@@ -30,8 +30,8 @@
     ref attribute is added to the component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument. refs can be used both in class and functional components (as a closure). Usually used when there is a need to do integration with third-party DOM libraries.
 
     ```html
-        <input ref={(input) => this.input = input} />;
-        <input ref={(input) => inputElement = input} />.
+        <input ref={(input) => this.input = input} />
+        <input ref={(input) => inputElement = input} />
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
