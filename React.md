@@ -11,10 +11,10 @@
 |3  | [What are refs used for in React?](#what-are-refs-used-for-in-react) |
 |4  | [How events are handled in React?](#how-events-are-handled-in-react) |
 |5  | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
-|6  | [What are Higher-Order components (HOC)?](#what-are-higher-order-components) |
-|7  | [What are controlled components?](#hat-are-controlled-components) |
-|8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-react-createElement) |
-|9  | [What is JSX?](#what-is-JSX) |
+|6  | [What are Higher-Order components (HOC)?](#what-are-higher-order-components-hoc) |
+|7  | [What are controlled components?](#what-are-controlled-components) |
+|8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-reactcreateelement) |
+|9  | [What is JSX?](#what-is-jsx) |
 |10  | [Why should not we update the state directly?](#why-should-not-we-update-the-state-directly) |
 
 
@@ -75,7 +75,7 @@
     **[⬆ Back to Top](#table-of-contents)**
 
 7. ### What are controlled components?
-    The component containing the form elements, such as <input>, <textarea>, and <select>, keeps track of the value of the input in it's state and re-renders the component each time the callback function e.g. onChange is fired therefore updating the state. This component is called a controlled component.
+    The component containing the form elements, such as `<input>`, `<textarea>`, and `<select>`, keeps track of the value of the input in it's state and re-renders the component each time the callback function e.g. onChange is fired therefore updating the state. This component is called a controlled component.
 
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -83,8 +83,8 @@
 8. ### What is equivalent of the following using React.createElement?
     
     ```javascript
-        QUESTION: const element = (<h1 className="greeting">Hello, world!</h1>)
-        ANSWER: const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
+        const element = (<h1 className="greeting">Hello, world!</h1>)
+        const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -102,8 +102,8 @@
     If it is updated directly, it won’t re-render the component. Instead use setState() method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
         
     ```javascript
-        WRONG: this.state.message =”Hello world”
-        CORRECT: this.setState({message: ‘Hello World’})
+        this.state.message =”Hello world”
+        this.setState({message: ‘Hello World’})
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
