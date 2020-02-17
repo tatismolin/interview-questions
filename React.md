@@ -12,9 +12,9 @@
 |4  | [How events are handled in React?](#how-events-are-handled-in-react) |
 |5  | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |6  | [What are Higher-Order components (HOC)?](#what-are-higher-order-components) |
-|7  | [What are controlled components?](#hat-are-controlled-components) |
-|8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-react-createElement) |
-|9  | [What is JSX?](#what-is-JSX) |
+|7  | [What are controlled components?](#what-are-controlled-components) |
+|8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-react.createelement) |
+|9  | [What is JSX?](#what-is-jsx) |
 |10  | [Why should not we update the state directly?](#why-should-not-we-update-the-state-directly) |
 
 
@@ -61,6 +61,7 @@
     Both props and state are plain JavaScript objects. Both of them hold information that influences the output of render. They are different in their functionality with respect to component.
     * Props get passed to the component similar to function parameters; 
     * State is managed within the component similar to variables declared within a function.
+    
     | State | Props |
     | --- | --------- |
     | The state is completely managed within a component for internal communication | Props are directly passed to its parents with child component |
