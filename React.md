@@ -77,6 +77,12 @@
     ```javascript
         const EnhancedComponent = higherOrderComponent(WrappedComponent)
     ```
+    
+    
+    **[⬆ Back to Top](#table-of-contents)**
+
+7. ### What are controlled components?
+    The component containing the form elements, such as ```html<input>```, ```html```<textarea>```, and ```html<select>```, keeps track of the value of the input in it's state and re-renders the component each time the callback function e.g. onChange is fired therefore updating the state. This component is called a controlled component.
 
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -88,6 +94,7 @@
         const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
     ```
 
+
     **[⬆ Back to Top](#table-of-contents)**
 
 9. ### What is JSX?
@@ -96,6 +103,7 @@
     ```html
         <a href={props.url}>{props.name}</a>
     ```
+
 
     **[⬆ Back to Top](#table-of-contents)**
 
