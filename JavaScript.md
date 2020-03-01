@@ -15,7 +15,7 @@
 |7  | [What is the difference between JavaScript and Java?](#what-is-the-difference-between-javascript-and-java) |
 |8  | [What is ECMA?](#what-is-ecma) |
 |9  | [What is ECMAScript 6 (ES6, ES2015, and ECMAScript 2015)?](#what-is-ecmascript-6-es6-es2015-and-ecmascript-2015) |
-|10  | [What are ES6 Modules?](#what-are-es6-modules) |
+|10  | [What are ES6 Modules?](#what-are-es-6-modules) |
 |11  | [What is Babel?](#What is Babel?) |
 |12  | [What’s the difference between Scripting and Programming Languages (Compiled and Interpreted)?](#What’s the difference between Scripting and Programming Languages (Compiled and Interpreted)?) |
 |13  | [What is JavaScript Engine?](#What is JavaScript Engine?) |
