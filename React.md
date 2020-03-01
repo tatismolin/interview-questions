@@ -1,4 +1,4 @@
-# React Interview Questions & Answers
+# React.js Interview Questions & Answers
 
 > Click :star:if you like it.
 
