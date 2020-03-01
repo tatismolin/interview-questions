@@ -16,16 +16,42 @@
 |8  | [What is ECMA?](#what-is-ecma) |
 |9  | [What is ECMAScript 6 (ES6, ES2015, and ECMAScript 2015)?](#what-is-ecmascript-6-es6-es2015-and-ecmascript-2015) |
 |10  | [What are ES6 Modules?](#what-are-es6-modules) |
-|11  | [](#) |
-|12  | [](#) |
-|13  | [](#) |
-|14  | [](#) |
-|15  | [](#) |
-|16  | [](#) |
-|17  | [](#) |
-|18  | [](#) |
-|19  | [](#) |
-|20  | [](#) |
+|11  | [What is Babel?](#What is Babel?) |
+|12  | [What’s the difference between Scripting and Programming Languages (Compiled and Interpreted)?](#What’s the difference between Scripting and Programming Languages (Compiled and Interpreted)?) |
+|13  | [What is JavaScript Engine?](#What is JavaScript Engine?) |
+|14  | [What is JavaScript runtime?](#What is JavaScript runtime?) |
+|15  | [What are JavaScript data types?](#What are JavaScript data types?) |
+|16  | [What is NaN?](#What is NaN?) |
+|17  | [What is null?](#What is null?) |
+|18  | [What is undefined?](#What is undefined?) |
+|19  | [What is the difference between undeclared & undefined?](#What is the difference between undeclared & undefined?) |
+|20  | [What is Object?](#What is Object?) |
+|21  | [What are some JavaScript object iteration methods?](#What are some JavaScript object iteration methods?) |
+|22  | [What is Prototype of an Object?](#What is Prototype of an Object?) |
+|23  | [What does the new keyword do?](#What does the new keyword do?) |
+|24  | [How to read the properties of an object in JavaScript?](#How to read the properties of an object in JavaScript?) |
+|25  | [What is Object Destructuring?](#What is Object Destructuring?) |
+|26  | [What is an array?](#What is an array?) |
+|27  | [What are some JavaScript array iteration methods?](#What are some JavaScript array iteration methods?) |
+|28  | [How to return unique elements of an array?](#How to return unique elements of an array?) |
+|29  | [What is the difference between looping and iteration?](#What is the difference between looping and iteration?) |
+|30  | [What are all JavaScript loop structures?](#What are all JavaScript loop structures?) |
+|31  | [What is break and continue statements?](#What is break and continue statements?) |
+|32  | [What are JavaScript conditionals?](#What are JavaScript conditionals?) |
+|33  | [What are Truthy and Falsy in JavaScript?](#What are Truthy and Falsy in JavaScript?) |
+|34  | [What are JavaScript Operators?](#What are JavaScript Operators?) |
+|35  | [What is === operator? What is the difference between === and ==?](#What is === operator? What is the difference between === and ==?) |
+|36  | [What does the !! operator do?](#What does the !! operator do?) |
+|37  | [What are some JavaScript Math methods?](#What are some JavaScript Math methods?) |
+|38  | [What is variable?](#What is variable?) |
+|39  | [What is global variable?](#What is global variable?) |
+|40  | [What are the variable naming conventions in JavaScript?](#What are the variable naming conventions in JavaScript?) |
+|41  | [What is function?](#What is function?) |
+|42  | [What is a callback function?](#What is a callback function?) |
+|43  | [What is an anonymous function in JavaScript?](#What is an anonymous function in JavaScript?) |
+|44  | [What is closure?](#What is closure?) |
+|45  | [](#) |
+
 
 
 1. ### What is JavaScript?
