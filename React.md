@@ -19,7 +19,7 @@ React creates a virtual DOM.
 When state changes in a component it first runs a "diffing" algorithm, which identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff.
 
 4. ### What is create-react-app?
-create-react-app is the official CLI (Command Line Interface) command for React to create React apps.
+`create-react-app` is the official CLI (Command Line Interface) command for React to create React apps.
 
 5. ### What is the current stable version of ReactJS?
 Version: 16.12.0 
@@ -55,7 +55,7 @@ It is an in-memory representation of Real DOM. It happens between the render fun
 12. ### What is the differentiate between Real DOM and Virtual DOM?
 |Real DOM	|Virtual  DOM|
 |-------------|------------|
-|Updates slow	Updates faster
+|Updates slow	|Updates faster
 |Can directly update HTML	|Can’t directly update HTML|
 |Creates a new DOM if element updates	|Updates the JSX if element updates|
 |DOM manipulation is very expensive	|DOM manipulation is very easy|
@@ -98,15 +98,13 @@ this.setState(prevState => ({ 
 21. ### What are props?
 Props are properties that are passed into a child component from its parent. A child component can never send a prop back to the parent component. Props can be anything, variables, functions, etc.
 
-22. ### What does it mean to pass props?
-Passing props is how information flows in React copmonents, from parents to children.
-
 22. ### What is the difference between state and props?
 Both props and state are plain JavaScript objects. Both of them hold information that influences the output of render. They are different in their functionality with respect to component.
 * Props get passed to the component similar to function parameters; 
 * State is managed within the component similar to variables declared within a function.
+
 |State	|Props|
-|-------|--------|
+|-----------|-----------|
 |The state is completely managed within a component for internal communication|	Props are directly passed to its parents with child component|
 |State can be modified using `setState()` method|	A particular component should never modify its own props|
 |State changes can be asynchronous	|Props are read-only|
@@ -131,8 +129,10 @@ It is necessary because components are not the DOM element but they are construc
 Stateless components are pure functions that render DOM based on the props provided to them.
 
 28. ### What are Higher-Order components (HOC)?
-A higher-order component is a function that takes a component and returns a new component. 
-	const EnhancedComponent = higherOrderComponent(WrappedComponent).
+A higher-order component is a function that takes a component and returns a new component.
+```javascript
+	const EnhancedComponent = higherOrderComponent(WrappedComponent)
+```
 
 29. ### What are Presentational and Container components?
 * Presentational components are concerned with how things look. They generally receive data and callbacks exclusively via props. They are usually functional components.
@@ -148,7 +148,7 @@ PureComponent is exactly the same as Component except the way it handles the s
 * State/Property Updates;
 * Destruction.
 
-33.###  What are the different phases of ReactJS component lifecycle?
+33. ### What are the different phases of ReactJS component lifecycle?
 There are four different phases of React component’s lifecycle:
 * Initialization: Component prepares to set up the initial state and default props.
 * Mounting: Component is ready to mount in the browser DOM. 
@@ -158,12 +158,10 @@ There are four different phases of React component’s lifecycle:
 34. ### What are the lifecycle methods of ReactJS?
 * `componentWillMount`: Executed before rendering and is used for App level configuration in root component.
 * `componentDidMount`: Executed after first rendering.
-——————————————
 * `componentWillReceiveProps`: Executed when particular prop updates to trigger state transitions.
 * `shouldComponentUpdate`: Determines if the component will be updated or not. By default it returns true. It is a great place to improve performance as it allows to prevent a re-render if component receives new prop.
 * `componentWillUpdate`: Executed before re-rendering the component when there are pros & state changes confirmed by shouldComponentUpdate which returns true.
 * `componentDidUpdate`: Mostly it is used to update the DOM in response to prop or state changes.
-——————————————
 * `componentWillUnmount`: It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
 
 35. ### What does it mean for a component to be mounted (componentDidMount)?
@@ -182,7 +180,7 @@ In JavaScript, the value of this changes depending on the current context. Wit
 ```
 
 37. ### How does React render method works?
-It returns React element which is the representation of the DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as <div>. This function must be kept pure i.e., it must return the same result each time it is invoked. Render method is called each time an update happens.
+It returns React element which is the representation of the DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as `<div>` This function must be kept pure i.e., it must return the same result each time it is invoked. Render method is called each time an update happens.
 
 38. ### How to conditionally render components?
 Use ternary operator.
@@ -261,7 +259,7 @@ In React, events are the triggered reactions to specific actions like mouse hove
 ```
 
 51. ### How are Forms created in React?
-React forms are similar to HTML forms. But in React, the state is contained in the state property of the component and is only updated via setState(). Thus the elements can’t directly update their state and their submission is handled by a JavaScript function. This function has full access to the data that is entered by the user into a form.
+React forms are similar to HTML forms. But in React, the state is contained in the state property of the component and is only updated via `setState()`. Thus the elements can’t directly update their state and their submission is handled by a JavaScript function. This function has full access to the data that is entered by the user into a form.
 ```javascript
 	<form onSubmit={this.handleSubmit}>
 		<input value={this.state.value} />
@@ -279,13 +277,13 @@ Used to define multiple routes and when a user types a specific URL, if this URL
 
 55. ### How to implement default or NotFound page?
 A `<Switch>` renders the first child <Route> that matches. A <Route> with no path always matches. So you just need to simply drop path attribute as below
-	```javascript
+```jsx harmony
 	<Switch>
   		<Route exact path="/" component={Home}/>
   		<Route path="/user" component={User}/>
   		<Route component={NotFound} />
 	</Switch>
-	```
+```
 
 56. ### What is Flux?
 Flux is an architectural pattern that enforces unidirectional data flow (opposite of MVC) — its core purpose is to control derived data so that multiple components can interact with that data without risking pollution.The Flux pattern is generic; it’s not specific to React applications, nor is it required to build a React app. However, Flux is commonly used by React developers because React components are declarative — the rendered UI (View) is simply a function of state (Store data).
