@@ -11,12 +11,65 @@
 |3  | [What are refs used for in React?](#what-are-refs-used-for-in-react) |
 |4  | [How events are handled in React?](#how-events-are-handled-in-react) |
 |5  | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
-|6  | [What are Higher-Order components (HOC)?](#what-are-higher-order-components) |
-|7  | [What are controlled components?](#hat-are-controlled-components) |
-|8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-react-createElement) |
-|9  | [What is JSX?](#what-is-JSX) |
+|6  | [What are Higher-Order components (HOC)?](#what-are-higher-order-components-hoc) |
+|7  | [What are controlled components?](#what-are-controlled-components) |
+|8  | [What is equivalent of the following using React.createElement?](#what-is-equivalent-of-the-following-using-reactcreateelement) |
+|9  | [What is JSX?](#what-is-jsx) |
 |10  | [Why should not we update the state directly?](#why-should-not-we-update-the-state-directly) |
+|11  | [What are the different phases of ReactJS component lifecycle?](#what-are-the-different-phases-of-reactjs-component-lifecycle) |
+|12  | [](#) |
+|13  | [](#) |
+|14  | [](#) |
+|15  | [](#) |
+|16  | [](#) |
+|17  | [](#) |
+|18  | [](#) |
+|19  | [](#) |
+|20  | [](#) |
+|21  | [](#) |
+|22  | [](#) |
+|23  | [](#) |
+|24  | [](#) |
+|25  | [](#) |
+|26  | [](#) |
+|27  | [](#) |
+|28  | [](#) |
+|29  | [](#) |
+|30  | [](#) |
+|31  | [](#) |
+|32  | [](#) |
+|33  | [](#) |
+|34  | [](#) |
+|35  | [](#) |
+|36  | [](#) |
+|37  | [](#) |
+|38  | [](#) |
+|39  | [](#) |
+|40  | [](#) |
+|41  | [](#) |
+|42  | [](#) |
+|43  | [](#) |
+|44  | [](#) |
+|45  | [](#) |
+|46  | [](#) |
+|47  | [](#) |
+|48  | [](#) |
+|49  | [](#) |
+|50  | [](#) |
+|51  | [](#) |
+|52  | [](#) |
+|53  | [](#) |
+|54  | [](#) |
+|55  | [](#) |
+|56  | [](#) |
+|57  | [](#) |
+|58  | [](#) |
+|59  | [](#) |
+|60  | [](#) |
+|61  | [](#) |
+|62  | [Is it possible to nest JSX elements into other JSX elements?](#is-it-possible-to-nest-jsx-elements-into-other-jsx-elements? ) |
 
+> Click :star:if you like it.
 
 1. ### What is virtual DOM?
 
@@ -25,7 +78,7 @@
    **[⬆ Back to Top](#table-of-contents)**
 
 2. ### What are the differences between a class component and functional component?
-    * Class component allows to use features like local state and lifecycle hooks.
+    * Class component allows to use features like local state and lifecycle hooks;
     * Functional component receives props and renders them to the page.
 
    **[⬆ Back to Top](#table-of-contents)**
@@ -35,8 +88,8 @@
     ref attribute is added to the component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument. refs can be used both in class and functional components (as a closure). Usually used when there is a need to do integration with third-party DOM libraries.
 
     ```html
-        <input ref={(input) => this.input = input} />
-        <input ref={(input) => inputElement = input} />
+        <input ref={(input) => this.input = input}/>
+        <input ref={(input) => inputElement = input}/>
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -57,6 +110,7 @@
     Both props and state are plain JavaScript objects. Both of them hold information that influences the output of render. They are different in their functionality with respect to component.
     * Props get passed to the component similar to function parameters; 
     * State is managed within the component similar to variables declared within a function.
+    
     | State | Props |
     | --- | --------- |
     | The state is completely managed within a component for internal communication | Props are directly passed to its parents with child component |
@@ -75,7 +129,7 @@
     **[⬆ Back to Top](#table-of-contents)**
 
 7. ### What are controlled components?
-    The component containing the form elements, such as <input>, <textarea>, and <select>, keeps track of the value of the input in it's state and re-renders the component each time the callback function e.g. onChange is fired therefore updating the state. This component is called a controlled component.
+    The component containing the form elements, such as `<input>`, `<textarea>`, and `<select>`, keeps track of the value of the input in it's state and re-renders the component each time the callback function e.g. onChange is fired therefore updating the state. This component is called a controlled component.
 
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -83,8 +137,8 @@
 8. ### What is equivalent of the following using React.createElement?
     
     ```javascript
-        QUESTION: const element = (<h1 className="greeting">Hello, world!</h1>)
-        ANSWER: const element = React.createElement('h1', {className: 'greeting'}, 'Hello, world!’)
+        const element = (<h1 className="greeting">Hello, world!</h1>)
+        const element = React.createElement("h1", {className: "greeting"}, "Hello, world!")
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -99,31 +153,31 @@
     **[⬆ Back to Top](#table-of-contents)**
 
 10. ### Why should not we update the state directly?
-    If it is updated directly, it won’t re-render the component. Instead use setState() method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
+    If it is updated directly, it won’t re-render the component. Instead use `setState()` method. It schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
         
     ```javascript
-        WRONG: this.state.message =”Hello world”
-        CORRECT: this.setState({message: ‘Hello World’})
+        this.state.message = ”Hello world”
+        this.setState({message: "Hello World"})
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
 11. ### What are the different phases of ReactJS component lifecycle?
     There are four different phases of React component’s lifecycle:
-    * Initialization: Component prepares to set up the initial state and default props.
-    * Mounting: Component is ready to mount in the browser DOM. 
-    * Updating: Component gets updated in two ways, sending the new props and updating the state. 
+    * Initialization: Component prepares to set up the initial state and default props;
+    * Mounting: Component is ready to mount in the browser DOM;
+    * Updating: Component gets updated in two ways, sending the new props and updating the state;
     * Unmounting: Component is not needed and get unmounted from the browser DOM.
 ￼
     **[⬆ Back to Top](#table-of-contents)**
 
 12. ### What are the lifecycle methods of ReactJS?
-    * `componentWillMount`: Executed before rendering and is used for App level configuration in root component.
-    * `componentDidMount`: Executed after first rendering.
-    * `componentWillReceiveProps`: Executed when particular prop updates to trigger state transitions.
-    * `shouldComponentUpdate`: Determines if the component will be updated or not. By default it returns true. It is a great place to improve performance as it allows to prevent a rerender if component receives new prop.
-    * `componentWillUpdate`: Executed before re-rendering the component when there are pros & state changes confirmed by `shouldComponentUpdate` which returns true.
-    * `componentDidUpdate`: Mostly it is used to update the DOM in response to prop or state changes.
+    * `componentWillMount`: Executed before rendering and is used for App level configuration in root component;
+    * `componentDidMount`: Executed after first rendering;
+    * `componentWillReceiveProps`: Executed when particular prop updates to trigger state transitions;
+    * `shouldComponentUpdate`: Determines if the component will be updated or not. By default it returns true. It is a great place to improve performance as it allows to prevent a rerender if component receives new prop;
+    * `componentWillUpdate`: Executed before re-rendering the component when there are pros & state changes confirmed by `shouldComponentUpdate` which returns true;
+    * `componentDidUpdate`: Mostly it is used to update the DOM in response to prop or state changes;
     * `componentWillUnmount`: It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.
 ￼
     **[⬆ Back to Top](#table-of-contents)**
@@ -131,14 +185,14 @@
 13. ### What does three dots (...) in React do?
     It is called property spread notation. It was added in ES2018.
     ```jsx harmony
-        <Modal {...this.props} title='Modal heading' animation={false}>;
-        <Modal a={this.props.a} b={this.props.b} title='Modal heading' animation={false}>.
+        <Modal {...this.props} title="Modal heading" animation={false}>
+        <Modal a={this.props.a} b={this.props.b} title="Modal heading" animation={false}>
     ```
 ￼
     **[⬆ Back to Top](#table-of-contents)**
     
 14. ### What are React Hooks?
-    Hooks are a new addition in React 16.8. They allow to use state and other React features without writing a class. 
+    Hooks are a new addition in `React 16.8`. They allow to use state and other React features without writing a class. 
 ￼
     **[⬆ Back to Top](#table-of-contents)**
     
@@ -161,11 +215,11 @@
     In JavaScript, the value of this changes depending on the current context. Within React class component methods, developers normally expect this to refer to the current instance of a component, so it is necessary to bind these methods to the instance. Normally this is done in the constructor.
     ```javascript
         constructor(props) {
-                super(props);
-                this.state = {
-                    isFormSubmitted: false
-                };
-            this.handleSubmit = this.handleSubmit.bind(this);
+	     super(props);
+	     this.state = {
+		isFormSubmitted: false
+	     };
+	     this.handleSubmit = this.handleSubmit.bind(this);
         };
     ```
 ￼
@@ -189,11 +243,11 @@
     **[⬆ Back to Top](#table-of-contents)**
     
 21. ### How to avoid the need for binding in React?
-    Use arrow functions, also called ‘fat arrow‘ (=>) functions. These functions allow to bind the context of the components properly since in ES6 auto binding is not available by default.
+    Use arrow functions, also called "fat arrow" `(=>)` functions. These functions allow to bind the context of the components properly since in ES6 auto binding is not available by default.
     
     ```jsx harmony
-        <MyInput onChange={this.handleChange.bind(this) } />
-        <MyInput onChange={ (e) => this.handleOnChange(e) } />
+        <MyInput onChange={this.handleChange.bind(this)} />
+        <MyInput onChange={(e) => this.handleOnChange(e)} />
     ```
 ￼
     **[⬆ Back to Top](#table-of-contents)**
@@ -215,7 +269,7 @@
     
 25. ### How to write inline style in React?
     ```html
-        <div style={{ height: 10 }}>
+        <div style={{height: 10}}>
     ```
 ￼
     **[⬆ Back to Top](#table-of-contents)**
@@ -311,7 +365,7 @@
     **[⬆ Back to Top](#table-of-contents)**
     
 40. ### What’s the difference between an Element and a Component in React?
-    * Element describes what you want to see on the screen; it is an object representation of some UI.
+    * Element describes what you want to see on the screen; it is an object representation of some UI;
     * Component is a function or a class which optionally accepts input and returns a React element.
 ￼
     **[⬆ Back to Top](#table-of-contents)**
@@ -342,7 +396,7 @@
 	
     ```html
         <form onSubmit={this.handleSubmit}>
-            <input value={this.state.value} />
+            <input value={this.state.value}/>
         </form>
     ```
 ￼
@@ -375,8 +429,8 @@
 
     ```jsx harmony
         {address
-                ? <p>{address}</p>
-                : <p>{'Address is not available'}</p>
+             ? <p>{address}</p>
+             : <p>{"Address is not available"}</p>
         }
        ```
 ￼
@@ -404,8 +458,8 @@
 
     ```jsx harmony
         <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/user" component={User}/>
+            <Route exact path="/" component={Home} />
+            <Route path="/user" component={User} />
             <Route component={NotFound} />
         </Switch>
     ```
@@ -469,8 +523,8 @@
     **[⬆ Back to Top](#table-of-contents)**
     
 60. ### What is the current stable version of ReactJS?
-    Version: 16.12.0 
-    Release on: Nov 14, 2019
+    `Version: 16.12.0`
+    `Release on: Nov 14, 2019`
 ￼
     **[⬆ Back to Top](#table-of-contents)**
     
